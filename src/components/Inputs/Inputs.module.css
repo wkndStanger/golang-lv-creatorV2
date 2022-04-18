@@ -1,0 +1,74 @@
+.variables {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1.2rem;
+}
+
+.variables input {
+	font: inherit;
+	font-size: 1.4rem;
+	padding: 0.6rem 1rem;
+}
+
+.variables .on-focus {
+	position: relative;
+}
+
+.copy-alert {
+	color: var(--bg-color);
+	background-color: rgba(0, 0, 0, 0.9);
+	font-size: 1rem;
+	visibility: hidden;
+	border-radius: 0.7rem;
+	text-align: center;
+	opacity: 0;
+	z-index: 999;
+	padding: 0.3rem 0.8rem;
+	position: absolute;
+	cursor: default;
+	transition: all 240ms ease-in-out;
+	width: 8rem;
+	height: 2.2rem;
+	margin-left: -4.3rem;
+	top: auto;
+	bottom: 84%;
+	left: 50%;
+}
+
+.copy-alert:after {
+	position: absolute;
+	bottom: -1.2rem;
+	left: 50%;
+	margin-left: -0.7rem;
+	content: "";
+	height: 0rem;
+	width: 0rem;
+	border: 0.6rem solid transparent;
+	border-top-color: rgba(0, 0, 0, 0.7);
+}
+
+*:not(.on-focus):active > .copy-alert,
+.on-focus input:focus + .copy-alert {
+	visibility: visible;
+	opacity: 1;
+	transition: all 240ms ease-in-out;
+}
+
+@media (max-width: 425px) {
+	.variables input {
+		font-size: 1.2rem;
+		padding: 0.4rem 0.7rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.variables {
+		gap: 0.5rem;
+	}
+	.variables input {
+		font-size: 1rem;
+		padding: 0.2rem 0.5rem;
+	}
+}
