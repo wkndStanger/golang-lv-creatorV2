@@ -21,8 +21,3 @@ This app focuses on submitting golang, creating separate input boxes for easy ac
 - React
 - Redux
 - Redux Toolkit
-
-## Roadmap
-
-- Fix Bug in TexareaCard
-- Change Input CSS to look like Core Input LV
