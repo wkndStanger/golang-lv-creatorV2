@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/golang-lv-creatorV2/static/css/main.d0075ab8.css",
+    "main.js": "/golang-lv-creatorV2/static/js/main.573e7c7b.js",
+    "index.html": "/golang-lv-creatorV2/index.html",
+    "main.d0075ab8.css.map": "/golang-lv-creatorV2/static/css/main.d0075ab8.css.map",
+    "main.573e7c7b.js.map": "/golang-lv-creatorV2/static/js/main.573e7c7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0075ab8.css",
+    "static/js/main.573e7c7b.js"
+  ]
+}
