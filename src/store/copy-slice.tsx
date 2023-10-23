@@ -31,12 +31,14 @@ const copySlice = createSlice({
 				.filter((text) => text.includes("{{"))
 				.map((text) => {
 					const newText = text.replace(/\s+/g, " ").trim();
+					
 					let value = "";
 					let sentence = "";
 
 					if (newText.includes('= "')) {
 						sentence = newText.split('= "')[1].split('" }}')[0];
 					}
+					
 					const textArr = newText.split(" ");
 					const name = textArr[1].slice(1);
 
